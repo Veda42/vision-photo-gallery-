@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <img src="logo.png" class="logo">
+        <h2>Photo Gallery</h2>
+        <input type="text" placeholder="Search">
+        <a href="http://127.0.0.1:5500/upload.html" target="_blank">
+            <img src="upload.png" alt="Logo" class="logo2">
+        </a>
+<img src="user logo.png"     class="logo1"   alt="User logo">
+        
+       
+   
+</div>
+<header>
+    <nav>
+
+        <ul>
+            <li><a href="http://127.0.0.1:5500/p1.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/p2.html"> Photos</a></li>
+            <li><a href="http://127.0.0.1:5500/animal.html">Animal</a></li>
+            <li><a href="http://127.0.0.1:5500/places.html">Places</a></li>
+            <li><a href="http://127.0.0.1:5500/nature.html">Nature</a></li>
+            <li><a href="http://127.0.0.1:5500/paintigs.html">Paint</a></li>
+            <li><a href="http://127.0.0.1:5500/gallery.html">uploadImages</a></li>
+
+            
+
+           
+        </ul>
+    </nav>
+</header>
+    <div class="gallery" id="gallery"></div>
+
+    <!-- Lightbox container -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeFullImg()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-controls">
+            <a id="download-btn" download>Download</a>
+            <button id="share-btn">Share</button>
+            <button id="delete-btn" onclick="deleteImage()">Delete</button>
+
+        </div>
+    </div>
+    
+
+    <script src="gallery.js"></script>
+</body>
+</html>
